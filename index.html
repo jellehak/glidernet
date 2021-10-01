@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Glidernet Client test</title>
+
+</head>
+
+<body>
+    <div id="app" class="d-flex">
+        See console for output
+    </div>
+
+    <script type="module">
+        import { glidernetService } from "./index.js"
+
+        // Use a proxy for handling CORS
+        glidernetService.proxy = "https://yellowdigital.nl/expo/glidernet/proxy.php?"
+
+        // Usage
+        const day = await glidernetService.getLogbook({
+            a: "EHSB",
+            date: "26092021",
+        })
+        const callSign = 'M5'
+        const suggestions = day.filter((elem) => elem.callSign === callSign)
+
+        console.log("Last flight of M5 on 26092021");
+        // Show last 
+        console.log(suggestions.slice(-1)[0]);
+
+        // Expose to console
+        window.glidernetService = glidernetService
+    </script>
+</body>
+
+</html>
