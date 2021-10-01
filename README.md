@@ -1,3 +1,5 @@
+> Client side parser of data from https://logbook.glidernet.org/
+
 # Usage
 ```js
  import { glidernetService } from "./index.js"

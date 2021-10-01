@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Glidernet Client test</title>
+
+</head>
+
+<body>
+    <div id="app" class="d-flex">
+
+        <table style="table-layout: auto;">
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col style="width: 110px; min-width: 110px;">
+            </colgroup>
+            <thead class="ant-table-thead">
+                <tr>
+                    <th class="ant-table-cell">#</th>
+                    <th class="ant-table-cell">Callsign</th>
+                    <th class="ant-table-cell">Registratie</th>
+                    <th class="ant-table-cell">Type</th>
+                    <th class="ant-table-cell">PIC/Instr</th>
+                    <th class="ant-table-cell">Pax/DBO/2e</th>
+                    <th class="ant-table-cell">Meth.</th>
+                    <th class="ant-table-cell">Start</th>
+                    <th class="ant-table-cell">Landing</th>
+                    <th class="ant-table-cell">Duur</th>
+                    <th class="ant-table-cell"></th>
+                    <th class="ant-table-cell"></th>
+                </tr>
+            </thead>
+            <tbody class="ant-table-tbody">
+
+
+                <tr data-row-key="116" class="ant-table-row ant-table-row-level-0">
+                    <td class="ant-table-cell">2</td>
+                    <td class="ant-table-cell">M11</td>
+                    <td class="ant-table-cell">PH-1311</td>
+                    <td class="ant-table-cell">ASK-21</td>
+                    <td class="ant-table-cell">
+                        <p>*NAME*</p>
+                    </td>
+                    <td class="ant-table-cell">*NAME*</td>
+                    <td class="ant-table-cell">lier</td>
+                    <td class="ant-table-cell">10:20</td>
+                    <td class="ant-table-cell">10:27</td>
+                    <td class="ant-table-cell">0:07</td>
+                    <td class="ant-table-cell"></td>
+                    <td class="ant-table-cell">
+                        <button type="button"
+                            class="ant-btn ant-btn-primary ant-btn-circle ant-btn-sm ant-btn-icon-only"><span role="img"
+                                aria-label="edit" class="anticon anticon-edit"><svg viewBox="64 64 896 896"
+                                    focusable="false" class="" data-icon="edit" width="1em" height="1em"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M257.7 752c2 0 4-.2 6-.5L431.9 722c2-.4 3.9-1.3 5.3-2.8l423.9-423.9a9.96 9.96 0 000-14.1L694.9 114.9c-1.9-1.9-4.4-2.9-7.1-2.9s-5.2 1-7.1 2.9L256.8 538.8c-1.5 1.5-2.4 3.3-2.8 5.3l-29.5 168.2a33.5 33.5 0 009.4 29.8c6.6 6.4 14.9 9.9 23.8 9.9zm67.4-174.4L687.8 215l73.3 73.3-362.7 362.6-88.9 15.7 15.6-89zM880 836H144c-17.7 0-32 14.3-32 32v36c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-36c0-17.7-14.3-32-32-32z">
+                                    </path>
+                                </svg></span></button>
+
+                        <div>
+                            <button onclick="check('M11', 2-1)">Fetch from glidernet</button>
+                            <div class="results"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr data-row-key="117" class="ant-table-row ant-table-row-level-0">
+                    <td class="ant-table-cell">1</td>
+                    <td class="ant-table-cell">M5</td>
+                    <td class="ant-table-cell">PH-1280</td>
+                    <td class="ant-table-cell">ASK-23B</td>
+                    <td class="ant-table-cell">
+                        <p>*NAME*</p>
+                    </td>
+                    <td class="ant-table-cell"></td>
+                    <td class="ant-table-cell">lier</td>
+                    <td class="ant-table-cell">10:17</td>
+                    <td class="ant-table-cell">10:24</td>
+                    <td class="ant-table-cell">0:07</td>
+                    <td class="ant-table-cell"></td>
+                    <td class="ant-table-cell"><button type="button"
+                            class="ant-btn ant-btn-primary ant-btn-circle ant-btn-sm ant-btn-icon-only"><span role="img"
+                                aria-label="edit" class="anticon anticon-edit"><svg viewBox="64 64 896 896"
+                                    focusable="false" class="" data-icon="edit" width="1em" height="1em"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M257.7 752c2 0 4-.2 6-.5L431.9 722c2-.4 3.9-1.3 5.3-2.8l423.9-423.9a9.96 9.96 0 000-14.1L694.9 114.9c-1.9-1.9-4.4-2.9-7.1-2.9s-5.2 1-7.1 2.9L256.8 538.8c-1.5 1.5-2.4 3.3-2.8 5.3l-29.5 168.2a33.5 33.5 0 009.4 29.8c6.6 6.4 14.9 9.9 23.8 9.9zm67.4-174.4L687.8 215l73.3 73.3-362.7 362.6-88.9 15.7 15.6-89zM880 836H144c-17.7 0-32 14.3-32 32v36c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-36c0-17.7-14.3-32-32-32z">
+                                    </path>
+                                </svg></span></button>
+                            
+                                <div>
+                                    <button onclick="check('M5', 1-1)">Fetch from glidernet</button>
+                                    <div class="results"></div>
+                                </div>
+                            </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script type="module">
+        import { glidernetService } from "./index.js"
+
+        // Use a proxy for handling CORS
+        glidernetService.proxy = "https://yellowdigital.nl/expo/glidernet/proxy.php?"
+
+        // Get day logbook
+        const logbook = await glidernetService.getLogbook({
+            a: "EHSB",
+            date: "26092021",
+        })
+      
+        const checkGlider = (callSign, index) => {
+            // Match on index
+            if (logbook[index].callSign === callSign) {
+                // console.log(logbook[index])
+                return logbook[index]
+            }
+
+            // Else .. TODO ?
+            const suggestions = logbook
+                .filter((elem) => elem.callSign === callSign)
+        }
+
+        // UI code
+        window.check = (callSign, index) => {
+            const resp = checkGlider(callSign, index)
+
+            alert(`takeOff -> landing : ${resp.takeOff} -> ${resp.landing} ${resp.time} | ${resp.towPlane ? `towPlane: ${resp.towPlane.type}` : 'no towplane'}`)
+        }
+    </script>
+</body>
+
+</html>
